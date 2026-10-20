@@ -1,243 +1,90 @@
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: linear-gradient(180deg, #f5f7ff 0%, #eef4ff 100%);
-  color: #1f2430;
-}
+---
+layout: page
+title: "首页"
+permalink: /
+---
 
-.site-header {
-  background: rgba(15, 23, 42, 0.9);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
-}
+<div class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">Personal Blog</span>
+    <h1>写下一点代码，也记录一段生活。</h1>
+    <p>
+      这里是我的个人博客，记录开发心得、学习笔记、项目实践，以及一些值得留念的日常瞬间。
+      未来我会在这里持续更新想法、反思和作品。
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#posts">查看文章</a>
+      <a class="btn btn-secondary" href="/about/">关于我</a>
+    </div>
+  </div>
 
-.site-header .site-title,
-.site-header a {
-  color: #f8fafc !important;
-}
+  <div class="hero-card">
+    <span class="mini-label">What I do</span>
+    <h2 style="margin: 0 0 1rem; color: white; letter-spacing: -0.04em;">编程、写作、探索</h2>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <span class="stat-value">1+</span>
+        <span class="stat-label">博客文章</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value">∞</span>
+        <span class="stat-label">想法</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value">100%</span>
+        <span class="stat-label">持续更新</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value">Lifelong</span>
+        <span class="stat-label">学习</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-.page-content {
-  padding-top: 2rem;
-}
+<div class="feature-row">
+  <div class="feature-card">
+    <div class="icon">💻</div>
+    <h3>技术分享</h3>
+    <p>记录开发过程、踩坑经验、项目实现与技术选型。</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">✍️</div>
+    <h3>原创思考</h3>
+    <p>整理学习路线、成长感悟和对技术趋势的观察。</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">🌱</div>
+    <h3>持续迭代</h3>
+    <p>把这个站点当成自己的知识库，不断积累和完善。</p>
+  </div>
+</div>
 
-.wrapper {
-  max-width: 1120px;
-}
+<div class="section-header">
+  <h2>最新文章</h2>
+  <p>最近更新的一些想法和记录。</p>
+</div>
 
-.hero {
-  display: grid;
-  grid-template-columns: 1.4fr 0.9fr;
-  gap: 2rem;
-  align-items: center;
-  padding: 3rem 0 2rem;
-}
+<div id="posts" class="post-grid">
+  <article class="post-card">
+    <span class="post-meta">2026-10-19 · 随笔</span>
+    <h3><a href="/2026/10/19/hello-world.html">你好，世界</a></h3>
+    <p>这是我的第一篇博客文章，记录我开始搭建这个站点的心情与初衷。</p>
+  </article>
 
-.hero-copy {
-  padding: 1rem 0;
-}
+  <article class="post-card">
+    <span class="post-meta">待更新 · 记录</span>
+    <h3>学习笔记</h3>
+    <p>这里未来会放置技术学习记录、开发实践经验和日常反思。</p>
+  </article>
+</div>
 
-.eyebrow {
-  display: inline-block;
-  margin-bottom: 1rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 999px;
-  background: rgba(99, 102, 241, 0.12);
-  color: #4f46e5;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+<div class="section-header">
+  <h2>关于这个站点</h2>
+  <p>这是一个以长期积累为目的的个人博客。</p>
+</div>
 
-.hero h1 {
-  margin: 0 0 1rem;
-  font-size: clamp(2.5rem, 4vw, 4.2rem);
-  line-height: 1.05;
-  letter-spacing: -0.06em;
-  color: #0f172a;
-}
-
-.hero p {
-  max-width: 62ch;
-  font-size: 1.08rem;
-  line-height: 1.8;
-  color: #475569;
-}
-
-.cta-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.85rem;
-  margin-top: 1.5rem;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.85rem 1.35rem;
-  border-radius: 999px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-1px);
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-  color: white;
-  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.35);
-}
-
-.btn-secondary {
-  background: rgba(15, 23, 42, 0.04);
-  color: #0f172a;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-}
-
-.hero-card {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  border-radius: 1.5rem;
-  padding: 1.4rem;
-  color: #e2e8f0;
-  box-shadow: 0 26px 60px rgba(15, 23, 42, 0.18);
-}
-
-.hero-card .mini-label {
-  display: inline-block;
-  margin-bottom: 1rem;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #a5b4fc;
-}
-
-.stat-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.95rem;
-  margin-top: 1rem;
-}
-
-.stat-box {
-  padding: 1rem;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.stat-value {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: white;
-}
-
-.stat-label {
-  font-size: 0.8rem;
-  color: #cbd5e1;
-}
-
-.feature-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.2rem;
-  margin: 2rem 0 2.5rem;
-}
-
-.feature-card {
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  border-radius: 1.2rem;
-  padding: 1.4rem;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
-}
-
-.feature-card .icon {
-  font-size: 1.7rem;
-  margin-bottom: 0.75rem;
-}
-
-.feature-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-}
-
-.feature-card p {
-  margin: 0;
-  color: #475569;
-  line-height: 1.7;
-}
-
-.section-header {
-  margin: 1rem 0 1.25rem;
-}
-
-.section-header h2 {
-  margin: 0 0 0.5rem;
-  font-size: clamp(1.8rem, 2.2vw, 2.6rem);
-  letter-spacing: -0.04em;
-}
-
-.section-header p {
-  margin: 0;
-  color: #64748b;
-}
-
-.post-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.2rem;
-  margin-bottom: 3rem;
-}
-
-.post-card {
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  border-radius: 1.2rem;
-  padding: 1.4rem;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
-}
-
-.post-meta {
-  display: block;
-  margin-bottom: 0.55rem;
-  font-size: 0.8rem;
-  color: #64748b;
-}
-
-.post-card h3 {
-  margin: 0 0 0.6rem;
-  font-size: 1.2rem;
-}
-
-.post-card p {
-  margin: 0;
-  color: #475569;
-  line-height: 1.7;
-}
-
-.site-footer {
-  border-top: 1px solid rgba(148, 163, 184, 0.2);
-  background: rgba(255, 255, 255, 0.5);
-}
-
-@media (max-width: 820px) {
-  .hero,
-  .feature-row,
-  .post-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding-top: 1.5rem;
-  }
-
-  .site-header .wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
+<p>
+  我希望它既能成为我的技术笔记本，也能保留我在成长过程中的观察与感悟。
+  这个站点会渐渐丰富起来，逐步成为一个个人知识库与表达空间。
+</p>

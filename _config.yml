@@ -7,7 +7,6 @@ url: "https://mrwhyxxk.github.io"
 github_username: mrwhyxxk
 
 markdown: kramdown
-# theme: minima
 remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
@@ -15,3 +14,4 @@ plugins:
 
 header_pages:
   - index.md
+  - about.md
