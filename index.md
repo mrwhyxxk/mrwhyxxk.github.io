@@ -4,87 +4,94 @@ title: "首页"
 permalink: /
 ---
 
-<div class="hero">
-  <div class="hero-copy">
-    <span class="eyebrow">Personal Blog</span>
-    <h1>写下一点代码，也记录一段生活。</h1>
-    <p>
-      这里是我的个人博客，记录开发心得、学习笔记、项目实践，以及一些值得留念的日常瞬间。
-      未来我会在这里持续更新想法、反思和作品。
-    </p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#posts">查看文章</a>
-      <a class="btn btn-secondary" href="/about/">关于我</a>
-    </div>
-  </div>
-
-  <div class="hero-card">
-    <span class="mini-label">What I do</span>
-    <h2 style="margin: 0 0 1rem; color: white; letter-spacing: -0.04em;">编程、写作、探索</h2>
-    <div class="stat-grid">
-      <div class="stat-box">
-        <span class="stat-value">1+</span>
-        <span class="stat-label">博客文章</span>
+<div class="home-shell">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="badge">PERSONAL BRAND</span>
+      <h1>写下一点代码，留下一个更完整的自己。</h1>
+      <p>
+        我是 <strong>Mrwhyxxk</strong>，这是我的个人博客与知识空间。<br>
+        这里记录我的技术学习、项目实践、思考总结，以及我在成长路上的一点点痕迹。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#posts">阅读文章</a>
+        <a class="btn btn-secondary" href="/about/">关于我</a>
       </div>
-      <div class="stat-box">
-        <span class="stat-value">∞</span>
-        <span class="stat-label">想法</span>
-      </div>
-      <div class="stat-box">
-        <span class="stat-value">100%</span>
-        <span class="stat-label">持续更新</span>
-      </div>
-      <div class="stat-box">
-        <span class="stat-value">Lifelong</span>
-        <span class="stat-label">学习</span>
+      <div class="meta-row">
+        <span>💻 Developer</span>
+        <span>✍️ Writer</span>
+        <span>🌱 Lifelong learner</span>
       </div>
     </div>
-  </div>
+
+    <aside class="profile-panel">
+      <div class="panel-header">
+        <span class="dot"></span>
+        <span>AVAILABLE FOR BUILDING</span>
+      </div>
+      <div class="profile-card">
+        <div class="avatar">M</div>
+        <h3>Mrwhyxxk</h3>
+        <p>探索技术、整理思考、持续迭代。</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat">
+          <strong>1+</strong>
+          <span>文章</span>
+        </div>
+        <div class="stat">
+          <strong>∞</strong>
+          <span>想法</span>
+        </div>
+        <div class="stat">
+          <strong>100%</strong>
+          <span>成长</span>
+        </div>
+        <div class="stat">
+          <strong>自驱</strong>
+          <span>学习</span>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="feature-grid">
+    <article class="feature-card">
+      <div class="feature-icon">💻</div>
+      <h3>技术实践</h3>
+      <p>记录开发过程、工程问题、项目经验和工具使用心得。</p>
+    </article>
+    <article class="feature-card">
+      <div class="feature-icon">✍️</div>
+      <h3>思考沉淀</h3>
+      <p>把零散的灵感整理成有结构的总结，形成自己的认知框架。</p>
+    </article>
+    <article class="feature-card">
+      <div class="feature-icon">🌱</div>
+      <h3>长期积累</h3>
+      <p>把博客当成知识库和个人品牌的成长记录，不断完善自己。</p>
+    </article>
+  </section>
+
+  <section class="section-head">
+    <div>
+      <span class="section-tag">LATEST</span>
+      <h2>最新文章</h2>
+    </div>
+    <a href="/about/">了解更多</a>
+  </section>
+
+  <section id="posts" class="post-grid">
+    <article class="post-card">
+      <span class="post-date">2026-10-19 · 随笔</span>
+      <h3><a href="/2026/10/19/hello-world.html">你好，世界</a></h3>
+      <p>这是我在 GitHub Pages 上搭建的第一篇文章，记录博客的初衷和开始的那一刻。</p>
+    </article>
+
+    <article class="post-card muted-card">
+      <span class="post-date">待更新 · 记录</span>
+      <h3>技术学习笔记</h3>
+      <p>这里将汇总更多我正在学习的内容，包括开发实践、工具经验和复盘思考。</p>
+    </article>
+  </section>
 </div>
-
-<div class="feature-row">
-  <div class="feature-card">
-    <div class="icon">💻</div>
-    <h3>技术分享</h3>
-    <p>记录开发过程、踩坑经验、项目实现与技术选型。</p>
-  </div>
-  <div class="feature-card">
-    <div class="icon">✍️</div>
-    <h3>原创思考</h3>
-    <p>整理学习路线、成长感悟和对技术趋势的观察。</p>
-  </div>
-  <div class="feature-card">
-    <div class="icon">🌱</div>
-    <h3>持续迭代</h3>
-    <p>把这个站点当成自己的知识库，不断积累和完善。</p>
-  </div>
-</div>
-
-<div class="section-header">
-  <h2>最新文章</h2>
-  <p>最近更新的一些想法和记录。</p>
-</div>
-
-<div id="posts" class="post-grid">
-  <article class="post-card">
-    <span class="post-meta">2026-10-19 · 随笔</span>
-    <h3><a href="/2026/10/19/hello-world.html">你好，世界</a></h3>
-    <p>这是我的第一篇博客文章，记录我开始搭建这个站点的心情与初衷。</p>
-  </article>
-
-  <article class="post-card">
-    <span class="post-meta">待更新 · 记录</span>
-    <h3>学习笔记</h3>
-    <p>这里未来会放置技术学习记录、开发实践经验和日常反思。</p>
-  </article>
-</div>
-
-<div class="section-header">
-  <h2>关于这个站点</h2>
-  <p>这是一个以长期积累为目的的个人博客。</p>
-</div>
-
-<p>
-  我希望它既能成为我的技术笔记本，也能保留我在成长过程中的观察与感悟。
-  这个站点会渐渐丰富起来，逐步成为一个个人知识库与表达空间。
-</p>
