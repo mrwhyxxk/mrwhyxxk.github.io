@@ -1,0 +1,17 @@
+title: "Mrwhyxxk 的博客"
+email: "your-email@example.com"
+description: >-
+  这是一个基于 GitHub Pages 的个人博客，记录开发、学习和生活。
+baseurl: ""
+url: "https://mrwhyxxk.github.io"
+github_username: mrwhyxxk
+
+markdown: kramdown
+# theme: minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+header_pages:
+  - index.md
